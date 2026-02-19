@@ -92,30 +92,7 @@ npm run dev
 
 ---
 
-## 📱 SMS + Telegram Alert Setup ⭐ DEMO WOW FACTOR
-
-### Option A: Real SMS via Fast2SMS (Recommended for Live Demo!)
-
-1. **Get Fast2SMS API Key:**
-   - Sign up at https://www.fast2sms.com/
-   - Dashboard → API Settings → Copy Authorization Key
-   - Free tier: 5 SMS/day (perfect for demo)
-
-2. **Configure Environment:**
-   ```bash
-   # In .env or via environment variables:
-   set FAST2SMS_API_KEY=your_api_key_here
-   set ALERT_PHONE_NUMBER=your_10_digit_phone_number
-   ```
-   
-   ⚠️ **Important**: Phone number must be 10 digits without +91
-   - Example: `9876543210` (not `+919876543210`)
-
-3. **Alert Routing:**
-   - **MEDIUM Risk** → Real SMS with OTP to phone + Telegram backup
-   - **HIGH Risk** → Telegram alert + brief SMS alert
-
-### Option B: Telegram OTP (Backup/Always Works)
+## 📱 Telegram OTP Setup (Optional but WOW factor)
 
 1. Search `@BotFather` on Telegram
 2. Send `/newbot` → get your bot token
@@ -125,8 +102,6 @@ npm run dev
    set TELEGRAM_TOKEN=your_token_here
    set TELEGRAM_CHAT_ID=your_chat_id_here
    ```
-
-**See [FAST2SMS_SETUP.md](FAST2SMS_SETUP.md) for detailed setup guide & troubleshooting.**
 
 ---
 
